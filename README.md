@@ -10,9 +10,12 @@ _None._
 ## Role Variables
 
 ```
+prometheus_version: 1.7.1
+prometheus_host_domain_name: localhost
 ```
 
 ```
+alertmanager_version:0.8.0
 ```
 
 ## Dependencies
