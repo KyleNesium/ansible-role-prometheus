@@ -1,0 +1,17 @@
+---
+#prometheus variables
+prometheus_version_string_match: prometheus, version {{ prometheus_version }}
+prometheus_root_dir: /opt/prometheus
+prometheus_config_dir: /etc/prometheus
+prometheus_server_dir: "{{ prometheus_root_dir }}/prometheus-server"
+prometheus_bin_dir: "{{ prometheus_root_dir }}/bin"
+prometheus_dist_dir: "{{ prometheus_root_dir }}/dist"
+prometheus_db_dir: "{{ prometheus_root_dir }}/databases"
+
+#alertmanager variables
+alertmanager_version_string_match: alertmanager, version {{ alertmanager_version }}
+alertmanager_root_dir: /opt/prometheus/alertmanager
+alertmanager_dist_dir: "{{ alertmanager_root_dir }}/dist"
+alertmanager_server_dir: "{{ alertmanager_root_dir }}/alertmanager-server"
+alertmanager_config_dir: /etc/alertmanager
+alertmanager_bin_dir: "{{ alertmanager_root_dir }}/bin"
