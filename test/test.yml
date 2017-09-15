@@ -1,1 +1,5 @@
-
+---
+- hosts: localhost
+  remote_user: root
+  roles:
+    - github-ansible-role-prometheus
