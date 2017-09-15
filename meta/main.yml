@@ -1,0 +1,17 @@
+---
+galaxy_info:
+  author: Kyle Steenkamp
+  description: Prometheus and Alertmanager installation
+  license: MIT
+  min_ansible_version: 1.9
+  platforms:
+  - name: EL
+    versions:
+    - all
+  galaxy_tags:
+    - prometheus
+    - monitoring
+    - web
+    - alertmanager
+dependencies:
+
