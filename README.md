@@ -1,26 +1,36 @@
-Ansible Role for Prometheus
 
-This ansible role will install Prometheus and AlertManager
+# Ansible Role for TokuDB
 
-Requirements
+This ansible role will install Prometheus and Alertmanager.
 
-None.
+## Requirements
 
-Role Variables
+_None._
 
-Dependencies
+## Role Variables
 
-None.
+```
+```
 
-Example Playbook
+```
+```
 
+## Dependencies
+
+_None._
+
+## Example Playbook
+
+```
 - hosts: servers
   roles:
     - { role: oneafricamedia.prometheus }
-License
+```
+
+## License
 
 MIT
 
-Author Information
+## Author Information
 
 Kyle Steenkamp
