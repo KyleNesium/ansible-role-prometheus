@@ -1,7 +1,0 @@
----
-#prometheus
-prometheus_version: 1.7.1
-prometheus_host_domain_name: localhost
-
-#alertmanager
-alertmanager_version: 0.8.0
