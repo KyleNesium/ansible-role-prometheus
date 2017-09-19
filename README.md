@@ -27,7 +27,7 @@ _None._
 ```
 - hosts: servers
   roles:
-    - { role: oneafricamedia.prometheus }
+    - { role: kylenesium.prometheus }
 ```
 
 ## License
