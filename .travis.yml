@@ -37,7 +37,7 @@ script:
   - ansible-playbook -i test/inventory test/test.yml --syntax-check
 
   # Run the role/playbook with ansible-playbook.
-  - ansible-playbook -i test/inventory test/test.yml -vvvv --connection=local --sudo
+  - ansible-playbook -i test/inventory test/test.yml --connection=local --sudo
   | grep -q 'changed=0.*failed=0'
   && (echo 'Idempotence test: pass' && exit 0)
   || (echo 'Idempotence test: fail' && exit 1)
@@ -45,3 +45,5 @@ script:
   # check is the user is created or not
   - id -u root | grep -q "no" && (echo "user not found" && exit 1) || (echo "user found" && exit 0)
   
+  # Request a page via the web server, to make sure it's running and responds.
+  - "curl http://localhost:9090"
