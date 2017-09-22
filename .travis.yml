@@ -37,7 +37,7 @@ script:
   - ansible-playbook -i test/inventory test/test.yml --syntax-check
 
   # Run the role/playbook with ansible-playbook.
-   - ansible-playbook -i test/inventory tests/test.yml -vvvv --skip-tags update,copy_host_ssh_id
+   - ansible-playbook -i test/inventory test/test.yml -vvvv --skip-tags update,copy_host_ssh_id
 
   # check is the user is created or not
   - id -u root | grep -q "no" && (echo "user not found" && exit 1) || (echo "user found" && exit 0)
