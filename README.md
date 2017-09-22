@@ -1,3 +1,4 @@
+https://travis-ci.org/KyleNesium/ansible-role-prometheus.svg?branch=master
 
 # Ansible Role for Prometheus
 
