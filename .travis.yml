@@ -29,7 +29,7 @@ script:
   # Check the role/playbook's syntax.
   - ansible-playbook -i test/inventory test/test.yml --syntax-check
   
-  - ansible-playbook -i test/inventory test/test.yml --connection=local --sudo
+  #- ansible-playbook -i test/inventory test/test.yml --connection=local --sudo
   
   # Idempotence test WIP
   #- "ansible-playbook -i test/inventory test/test.yml --connection=local --sudo | tee /tmp/output.txt; grep -q 'changed=0.*failed=0' /tmp/output.txt &amp;&amp; (echo 'Idempotence test: pass' &amp;&amp; exit 0) || (echo 'Idempotence test: fail' &amp;&amp; exit 1)"
@@ -38,4 +38,4 @@ script:
   - id -u prometheus | grep -q "no" && (echo "user not found" && exit 1) || (echo "user found" && exit 0)
   
   # Request a page via the web server, to make sure it's running and responds.
-  # - curl http://localhost:9090
+ # - curl http://localhost:9090
