@@ -1,6 +1,6 @@
 ---
 language: python
-python: "3"
+python: "3.0"
 
 # Doc: https://docs.travis-ci.com/user/customizing-the-build#Build-Matrix
 env:
