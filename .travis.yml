@@ -36,11 +36,7 @@ script:
 
   # check if the prometheus was created
 
-  - if grep -q 'prometheus' -Ri /etc/passwd ; then
-        echo "user exists!"
-    else
-        echo "user does not exist!"
-    fi'
+  - if [ grep -q prometheus -Ri /etc/passwd]; then echo "user exists!"; else echo "user does not exist!"; fi
   
   # Request a page via the web server, to make sure it's running and responds.
   - curl -v http://localhost:9090
