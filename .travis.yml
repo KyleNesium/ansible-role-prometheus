@@ -36,11 +36,11 @@ script:
 
   # check if the prometheus was created
 
-  - if grep -q 'rsoot' -Ri /etc/passwd ; then
-    echo "user exists!"
+  - 'if grep -q 'rsoot' -Ri /etc/passwd ; then
+        echo "user exists!"
     else
-    echo "user does not exist!"
-    fi
+        echo "user does not exist!"
+    fi'
   
   # Request a page via the web server, to make sure it's running and responds.
   - curl -v http://localhost:9090
