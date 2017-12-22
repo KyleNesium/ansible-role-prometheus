@@ -36,7 +36,7 @@ script:
 
   # check if the prometheus was created
 
-  - 'if grep -q 'prometheus' -Ri /etc/passwd ; then
+  - if grep -q 'prometheus' -Ri /etc/passwd ; then
         echo "user exists!"
     else
         echo "user does not exist!"
