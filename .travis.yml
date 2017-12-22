@@ -43,4 +43,4 @@ script:
     fi
   
   # Request a page via the web server, to make sure it's running and responds.
-  - curl http://localhost:9090
+  - curl -v http://localhost:9090
