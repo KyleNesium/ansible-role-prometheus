@@ -38,4 +38,4 @@ script:
   - id -u prometheus | grep -q "no" && (echo "user not found" && exit 1) || (echo "user found" && exit 0)
   
   # Request a page via the web server, to make sure it's running and responds.
- # - curl http://localhost:9090
+  - curl http://localhost:9090
